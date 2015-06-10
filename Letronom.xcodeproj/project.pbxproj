@@ -12,6 +12,8 @@
 		738F25261B22C9B7009CBB65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738F25251B22C9B7009CBB65 /* Images.xcassets */; };
 		738F25291B22C9B7009CBB65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738F25271B22C9B7009CBB65 /* Main.storyboard */; };
 		738F25351B22C9B7009CBB65 /* LetronomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738F25341B22C9B7009CBB65 /* LetronomTests.swift */; };
+		73E518321B2826AF00664E42 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E518311B2826AF00664E42 /* Notification.swift */; };
+		73E518341B282C2000664E42 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E518331B282C2000664E42 /* StatusBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 		738F252E1B22C9B7009CBB65 /* LetronomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetronomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		738F25331B22C9B7009CBB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		738F25341B22C9B7009CBB65 /* LetronomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetronomTests.swift; sourceTree = "<group>"; };
+		73E518311B2826AF00664E42 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		73E518331B282C2000664E42 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				738F25251B22C9B7009CBB65 /* Images.xcassets */,
 				738F25271B22C9B7009CBB65 /* Main.storyboard */,
 				738F251F1B22C9B7009CBB65 /* Supporting Files */,
+				73E518311B2826AF00664E42 /* Notification.swift */,
+				73E518331B282C2000664E42 /* StatusBar.swift */,
 			);
 			path = Letronom;
 			sourceTree = "<group>";
@@ -210,6 +216,8 @@
 			files = (
 				738F25241B22C9B7009CBB65 /* ViewController.swift in Sources */,
 				738F25221B22C9B7009CBB65 /* AppDelegate.swift in Sources */,
+				73E518321B2826AF00664E42 /* Notification.swift in Sources */,
+				73E518341B282C2000664E42 /* StatusBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +408,7 @@
 				738F253A1B22C9B7009CBB65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		738F253B1B22C9B7009CBB65 /* Build configuration list for PBXNativeTarget "LetronomTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +417,7 @@
 				738F253D1B22C9B7009CBB65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

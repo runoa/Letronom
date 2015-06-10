@@ -11,10 +11,13 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    let notification = Notification()
+    let statusBar = StatusBar()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        notification.setNotifications()
+        statusBar.setStatusItem()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -23,4 +26,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
 }
-
