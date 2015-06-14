@@ -19,13 +19,21 @@ class Notification: NSObject {
         nextTime = calendar.dateByAddingUnit(NSCalendarUnit.CalendarUnitSecond, value: secondDiff, toDate: nextTime, options: nil)
         return nextTime!
     }
+    
+    func getNextTimeText (date: NSDate) -> String {
+        var date_formatter = NSDateFormatter()
+        date_formatter.locale = NSLocale(localeIdentifier: "ja")
+        date_formatter.dateFormat = "HH時です / MM月dd日"
+        NSLog("%@",  date_formatter.stringFromDate(date))
+        return date_formatter.stringFromDate(date)
+    }
 
     func setNotification () {
         let nextTime = self.getNextTime()
         NSLog("add new notification: %@", nextTime);
         let notification = NSUserNotification()
-        notification.title = "Title"
-        notification.informativeText = "Text"
+        notification.title = "Letronom"
+        notification.informativeText = self.getNextTimeText(nextTime)
         notification.deliveryDate = nextTime
         NSUserNotificationCenter.defaultUserNotificationCenter().scheduleNotification(notification)
     }
